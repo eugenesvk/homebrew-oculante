@@ -1,11 +1,19 @@
-# Eugenesvk Cask-oculante
+# Homewbrew Cask: [oculante](https://github.com/woelper/oculante)
 
-## How do I install these formulae?
+A minimalistic crossplatform image viewer written in Rust
 
-`brew install eugenesvk/cask-oculante/<formula>`
+## How do I install this cask?
 
-Or `brew tap eugenesvk/cask-oculante` and then `brew install <formula>`.
+```sh
+brew install eugenesvk/oculante/oculante --no-quarantine
+```
+(`--no-quarantine` is required because the cask is not signed)
+Or 
+```sh
+brew tap eugenesvk/oculante
+brew install --cask oculante --no-quarantine
+```
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh)
