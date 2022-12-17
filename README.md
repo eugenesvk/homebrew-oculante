@@ -11,7 +11,16 @@ brew install eugenesvk/oculante/oculante --no-quarantine
 Or 
 ```sh
 brew tap eugenesvk/oculante
-brew install --cask oculante --no-quarantine
+brew install --no-quarantine oculante
+# or replace ↑ with ↓ to install to a custome folder
+brew install --no-quarantine '--appdir=/Applications/2 Play/2 Pic' oculante
+```
+
+## How do I update this cask to a newer version?
+
+```sh
+brew update # should automatically update all taps, including this custom one
+brew upgrade --no-quarantine oculante
 ```
 
 ## How do I uninstall this cask?
