@@ -1,0 +1,25 @@
+name: Automerge
+
+on:
+  pull_request_target:    	# Auto-merge a PR
+    types:                	#
+      - opened            	# PR is updated
+      # - synchronized    	#   ↑...
+      # - reopened        	#   ↑...
+      # - edited          	#   ↑...
+      # - labeled         	# required       label is applied
+      # - unlabeled       	# "do not merge" label is removed
+      # - ready_for_review	# draft is marked as "ready for review"
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: reitermarkus/automerge@v2
+        with:
+          token                           	: ${{ secrets.GH_TOKEN }}
+          merge-method                    	: merge
+          pull-request-author-associations	: OWNER
+          # required-labels               	: automerge
+          do-not-merge-labels             	: never-merge
+          # dry-run                       	: true
