@@ -1,6 +1,6 @@
 cask "oculante" do
-  version "0.6.32"
-  sha256 "faf516c4c0a3d1c6a0be394c3c37ff16d5eb6337f44f32171525610fc68514b2"
+  version "0.6.33"
+  sha256 "f54a533ba1aecb1aff6c15bcecce0bb30885e5675d9327eef9316b35eecd120e"
 
   url "https://github.com/woelper/oculante/releases/download/#{version}/oculante_mac.zip"
   name "oculante"
