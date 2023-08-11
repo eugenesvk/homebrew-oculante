@@ -1,6 +1,6 @@
 # Homewbrew Cask: [oculante](https://github.com/woelper/oculante)
 
-A minimalistic crossplatform image viewer written in Rust
+A minimalistic cross-platform image viewer written in Rust
 
 ## How do I install this cask?
 
@@ -12,7 +12,7 @@ Or
 ```sh
 brew tap eugenesvk/oculante
 brew install --no-quarantine oculante
-# or replace ↑ with ↓ to install to a custome folder
+# or replace ↑ with ↓ to install to a custom folder
 brew install --no-quarantine '--appdir=/Applications/2 Play/2 Pic' oculante
 ```
 
