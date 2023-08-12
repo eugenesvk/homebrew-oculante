@@ -1,3 +1,5 @@
+(use the [auto-updating tap](https://github.com/eugenesvk/homebrew-tap))
+
 # Homewbrew Cask: [oculante](https://github.com/woelper/oculante)
 
 A minimalistic cross-platform image viewer written in Rust
