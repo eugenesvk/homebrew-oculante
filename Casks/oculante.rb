@@ -7,6 +7,14 @@ cask "oculante" do
   desc "Minimalistic crossplatform image viewer written in Rust"
   homepage "https://github.com/woelper/oculante"
 
+  livecheck do
+    url :stable
+    regex(/^(\d{1,3}\.\d{1,3}\.\d{1,3})$/i)
+    strategy :git do |tags, regex|
+      tags.map { |tag| tag[regex, 1]&.gsub(/v/, "") }.compact
+    end
+  end
+
   app "oculante.app"
 
   zap trash: [
