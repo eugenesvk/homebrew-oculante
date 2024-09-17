@@ -19,5 +19,6 @@ cask "oculante" do
 
   zap trash: [
     "~/Library/Saved Application State/com.github.woelper.oculante.savedState",
+    "~/Library/Application Support/oculante",
   ]
 end
