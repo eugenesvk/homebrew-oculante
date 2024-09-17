@@ -33,7 +33,7 @@ Or
 brew uninstall --zap oculante
 brew untap eugenesvk/oculante
 ```
-to remove user settings at `~/Library/Saved Application State/com.github.woelper.oculante.savedState` and the tap itself
+to remove user config at `~/Library/Application Support/oculante`, app data at `~/Library/Saved Application State/com.github.woelper.oculante.savedState`, and the tap itself
 
 ## Documentation
 
