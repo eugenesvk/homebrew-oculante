@@ -11,7 +11,7 @@ cask "oculante" do
     url :stable
     regex(/^(\d{1,3}\.\d{1,3}\.\d{1,3})$/i)
     strategy :git do |tags, regex|
-      tags.map { |tag| tag[regex, 1]&.gsub(/v/, "") }.compact
+      tags.filter_map { |tag| tag[regex, 1]&.delete("v") }
     end
   end
 
