@@ -8,7 +8,7 @@ A minimalistic cross-platform image viewer written in Rust
 brew install eugenesvk/oculante/oculante --no-quarantine
 ```
 (`--no-quarantine` is required because the cask is not signed)
-Or 
+Or
 ```sh
 brew tap eugenesvk/oculante
 brew install --no-quarantine oculante
@@ -28,7 +28,7 @@ brew upgrade --no-quarantine oculante
 ```sh
 brew uninstall oculante
 ```
-Or 
+Or
 ```sh
 brew uninstall --zap oculante
 brew untap eugenesvk/oculante
