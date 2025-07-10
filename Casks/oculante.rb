@@ -8,7 +8,7 @@ cask "oculante" do
   homepage "https://github.com/woelper/oculante"
 
   livecheck do
-    url :stable
+    url :url
     regex(/^(\d{1,3}\.\d{1,3}\.\d{1,3})$/i)
     strategy :git do |tags, regex|
       tags.filter_map { |tag| tag[regex, 1]&.delete("v") }
