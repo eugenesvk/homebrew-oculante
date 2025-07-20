@@ -1,6 +1,7 @@
 name: Automerge
 
 on:
+  workflow_dispatch:        # allow manual trigger
   pull_request_target:    	# Auto-merge a PR
     types:                	#
       - opened            	# PR is updated
@@ -15,7 +16,7 @@ jobs:
   automerge:
     runs-on: ubuntu-latest
     steps:
-      - uses: reitermarkus/automerge@v2
+      - uses: reitermarkus/automerge@634d0a4b51134c163eee182ac9aa79133eb33e8d #v2.8.0 @25-07
         with:
           token                           	: ${{ secrets.GH_TOKEN }}
           merge-method                    	: merge
